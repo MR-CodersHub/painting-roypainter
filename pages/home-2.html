@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residential Painting | RoyPainter Homes</title>
+    <meta name="description" content="Niche residential painting for homes: live colour previews, furniture-safe prep and 10-year warranties. See before & after rooms.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body>
+
+    <div id="siteNavbar"></div>
+
+    <main>
+        
+    <!-- Hero Section with Dynamic Interactivity -->
+    <section class="hero" id="home">
+        <div class="hero-glow" id="heroGlow"></div>
+        <div class="hero-glow-2"></div>
+
+        <div class="hero-wrapper">
+            <!-- Left Hero Content -->
+            <div class="hero-content">
+
+                <h1 class="hero-title">
+                    Transforming Spaces Into <span class="highlight" id="heroHighlight">Living Art</span>
+                </h1>
+
+                <p class="hero-description">
+                    We deliver master-grade interior & exterior painting with flawless precision. Choose your mood below, test room shades live, and get an instant custom quote in seconds.
+                </p>
+
+                <!-- Interactive Color Palette Switcher -->
+                <div class="color-palette-bar">
+                    <div class="palette-header">
+                        <span class="palette-title">
+                            <i class="fa-solid fa-palette"></i> Explore Designer Finishes:
+                        </span>
+                        <span class="active-swatch-info" id="activeSwatchTag">
+                            Terracotta Warmth • #C45732
+                        </span>
+                    </div>
+
+                    <div class="swatches-list" id="swatchesList">
+                        <button class="color-swatch-btn active" data-color="#C45732" data-rgb="196, 87, 50" data-name="Terracotta Warmth" data-shade="Warmth" style="background: #C45732;" aria-label="Select Terracotta Warmth shade"></button>
+                        <button class="color-swatch-btn" data-color="#1E3A5F" data-rgb="30, 58, 95" data-name="Aegean Royal Blue" data-shade="Aegean" style="background: #1E3A5F;" aria-label="Select Aegean Royal Blue shade"></button>
+                        <button class="color-swatch-btn" data-color="#4A6B5D" data-rgb="74, 107, 93" data-name="Sage Serenity" data-shade="Sage" style="background: #4A6B5D;" aria-label="Select Sage Serenity shade"></button>
+                        <button class="color-swatch-btn" data-color="#D97706" data-rgb="217, 119, 6" data-name="Amber Ochre" data-shade="Amber" style="background: #D97706;" aria-label="Select Amber Ochre shade"></button>
+                        <button class="color-swatch-btn" data-color="#8B3A62" data-rgb="139, 58, 98" data-name="Velvet Plum" data-shade="Plum" style="background: #8B3A62;" aria-label="Select Velvet Plum shade"></button>
+                        <button class="color-swatch-btn" data-color="#2D3748" data-rgb="45, 55, 72" data-name="Modern Slate" data-shade="Slate" style="background: #2D3748;" aria-label="Select Modern Slate shade"></button>
+                    </div>
+                </div>
+
+                <!-- Trust Social Proof -->
+                <div class="hero-proof">
+                    <div class="avatars-group">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop" alt="Client" class="avatar-img">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Client" class="avatar-img">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Client" class="avatar-img">
+                        <div class="avatar-badge">1.2k+</div>
+                    </div>
+                    <div class="proof-details">
+                        <div class="proof-stars">★★★★★</div>
+                        <div class="proof-text">4.9 / 5.0 Rating Across 1,200+ Homes</div>
+                        <div class="proof-sub">100% Odorless & Washable Eco Paint</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Hero Visual with 3D Tilt & Live Room Colorizer -->
+            <div class="hero-visual-wrapper" id="heroVisualWrap">
+
+                <!-- Main Glass Showcase Card -->
+                <div class="hero-main-card" id="heroMainCard">
+                    <div class="room-preview-box">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&h=600&fit=crop" alt="Luxury Modern Interior" class="room-bg-image">
+                        <!-- Dynamic Color Tint Overlay -->
+                        <div class="room-color-tint" id="roomColorTint"></div>
+                        <div class="room-preview-badge">
+                            <span class="live-dot"></span>
+                            <span id="previewBadgeText">Live Finish: Terracotta Warmth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Section 2 — Stats -->
+        <section class="section section-tight section-alt">
+            <div class="container">
+                <div class="grid grid-4">
+                    <div class="stat-card"><div class="stat-number" data-counter="3100" data-suffix="+">0</div><div class="stat-label">Homes Painted</div></div>
+                    <div class="stat-card"><div class="stat-number" data-counter="99.4" data-decimals="1" data-suffix="%">0</div><div class="stat-label">Client Approval</div></div>
+                    <div class="stat-card"><div class="stat-number" data-counter="10" data-suffix=" Yr">0</div><div class="stat-label">Workmanship Warranty</div></div>
+                    <div class="stat-card"><div class="stat-number" data-counter="0" data-suffix=" VOC">0</div><div class="stat-label">Odour Paints Used</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 — Before / After -->
+        <section class="section section-soft">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Drag The Handle</span>
+                    <h2 class="section-title">Sage Lounge, Before & After</h2>
+                    <p class="section-sub">Move the slider to see a single 4-day transformation on a dated beige living room.</p>
+                </div>
+                <div class="card" id="beforeAfter" style="max-width:960px;margin:0 auto;overflow:hidden;border-radius:var(--radius-lg);">
+                    <div style="position:relative;height:460px;">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&h=900&fit=crop" alt="After: renovated sage lounge" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+                        <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=1200&h=900&fit=crop" alt="Before: dated beige lounge" class="ba-after" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;clip-path:inset(0 0 0 50%);">
+                        <div style="position:absolute;top:1rem;left:1rem;background:rgba(26,26,26,0.75);color:#fff;padding:0.4rem 0.9rem;border-radius:9999px;font-size:0.75rem;font-weight:700;">BEFORE</div>
+                        <div style="position:absolute;top:1rem;right:1rem;background:rgba(196,87,50,0.9);color:#fff;padding:0.4rem 0.9rem;border-radius:9999px;font-size:0.75rem;font-weight:700;">AFTER</div>
+                        <input type="range" min="0" max="100" value="50" aria-label="Compare before and after" style="position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 — Residential services -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Home-Focused</span>
+                    <h2 class="section-title">Residential Services</h2>
+                </div>
+                <div class="grid grid-3">
+                    <a href="../pages/service-details.html?id=interior-painting" class="service-card" style="text-decoration:none;">
+                        <div class="icon-tile"><i class="fa-solid fa-paint-roller"></i></div>
+                        <h3>Interior Painting</h3>
+                        <p>Whole-home colour transformations with spray + roll velvet finishes and zero dust.</p>
+                        <span class="card-link">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                    <a href="../pages/service-details.html?id=wall-restoration" class="service-card" style="text-decoration:none;">
+                        <div class="icon-tile"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <h3>Wall Restoration</h3>
+                        <p>Cracks, dents and old textures erased to level-5 smooth before colour goes on.</p>
+                        <span class="card-link">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                    <a href="../pages/service-details.html?id=cabinet-staining" class="service-card" style="text-decoration:none;">
+                        <div class="icon-tile"><i class="fa-solid fa-cabinet-filing"></i></div>
+                        <h3>Cabinet Staining</h3>
+                        <p>Factory-grade sprayed cabinets — the fastest kitchen transformation there is.</p>
+                        <span class="card-link">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                    <a href="../pages/service-details.html?id=designer-finishes" class="service-card" style="text-decoration:none;">
+                        <div class="icon-tile"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+                        <h3>Designer Finishes</h3>
+                        <p>Venetian plaster and lime wash for feature walls with genuine handcrafted depth.</p>
+                        <span class="card-link">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                    <a href="../pages/service-details.html?id=color-consultation" class="service-card" style="text-decoration:none;">
+                        <div class="icon-tile"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                        <h3>Colour Consultation</h3>
+                        <p>Light-mapped palettes and exact paint codes before you buy a single litre.</p>
+                        <span class="card-link">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                    <a href="../pages/service-details.html?id=faux-decorative" class="service-card" style="text-decoration:none;">
+                        <div class="icon-tile"><i class="fa-solid fa-palette"></i></div>
+                        <h3>Decorative Painting</h3>
+                        <p>Glazes, washes and stencils that turn ordinary walls into quiet art.</p>
+                        <span class="card-link">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5 — Process -->
+        <section class="section section-soft">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Your Home, Our Process</span>
+                    <h2 class="section-title">From “Hi” to Handover in Four Steps</h2>
+                </div>
+                <div class="process-grid">
+                    <div class="process-step"><div class="step-num">1</div><h3>Home Walkthrough</h3><p>Free visit, measurements and a colour consultation in your own light.</p></div>
+                    <div class="process-step"><div class="step-num">2</div><h3>Furniture-Safe Prep</h3><p>Everything wrapped, floors covered, HEPA air running — nothing moves.</p></div>
+                    <div class="process-step"><div class="step-num">3</div><h3>Paint & Protect</h3><p>Crews spray, roll and hand-cut with daily QA checkpoints.</p></div>
+                    <div class="process-step"><div class="step-num">4</div><h3>Walkthrough Sign-off</h3><p>White-glove cleanup and a final inspection with your project lead.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6 — Testimonials -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Neighbours Talk</span>
+                    <h2 class="section-title">What Homeowners Say</h2>
+                </div>
+                <div class="grid grid-3">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="quote">“We have three kids and a golden retriever — they finished our entire main floor without us moving a single couch. The smell was genuinely nothing.”</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop" alt="Priya Sharma">
+                            <div><div class="name">Priya Sharma</div><div class="role">Homeowner · Maple Grove</div></div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="quote">“The colour consultation paid for itself. They mapped our north-facing light and the sage they chose looks completely different — better than I imagined.”</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop" alt="Marcus Lee">
+                            <div><div class="name">Marcus Lee</div><div class="role">Homeowner · Cedar Hills</div></div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="quote">“Cabinets came back looking factory-new. Zero overspray, hardware reinstalled perfectly, and the kitchen was usable the whole time.”</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop" alt="Elena Moreau">
+                            <div><div class="name">Elena Moreau</div><div class="role">Homeowner · Brookside</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7 — Mini FAQ -->
+        <section class="section section-soft">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Good To Know</span>
+                    <h2 class="section-title">Residential FAQ</h2>
+                </div>
+                <div class="faq-list" style="max-width:820px;margin:0 auto;">
+                    <div class="faq-item">
+                        <button class="faq-question"><span class="q">Do we need to leave the house?</span><span class="faq-icon"><i class="fa-solid fa-plus"></i></span></button>
+                        <div class="faq-answer"><div class="faq-answer-inner">No. All our residential finishes are low-VOC and low-odour, so families, kids and pets can usually stay put while we work around them.</div></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question"><span class="q">How fast is a typical bedroom?</span><span class="faq-icon"><i class="fa-solid fa-plus"></i></span></button>
+                        <div class="faq-answer"><div class="faq-answer-inner">A standard bedroom is finished in a single day including prep and two coats. Whole main floors typically take 3–5 days.</div></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question"><span class="q">Is your warranty really 10 years?</span><span class="faq-icon"><i class="fa-solid fa-plus"></i></span></button>
+                        <div class="faq-answer"><div class="faq-answer-inner">Yes — every residential interior project carries a 10-year workmanship warranty covering peeling, blistering and premature failure.</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8 — CTA -->
+        <section class="section" style="padding-top:0;">
+            <div class="container">
+                <div class="cta-banner">
+                    <div class="cta-glow"></div>
+                    <h2>Your home deserves a master’s hand.</h2>
+                    <p>Free home visit, instant estimate, and a colour plan before you commit to anything.</p>
+                    <div class="hero-actions">
+                        <a href="../pages/contact.html" class="cta-button"><i class="fa-solid fa-calendar-check"></i> Book Free Home Visit</a>
+                        <a href="../pages/pricing.html" class="cta-button-secondary" style="background:rgba(255,255,255,0.12);color:#fff;border-color:rgba(255,255,255,0.25);">See Pricing</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="siteFooter"></div>
+
+    <script src="../assets/js/form-validation.js"></script>
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/home2.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

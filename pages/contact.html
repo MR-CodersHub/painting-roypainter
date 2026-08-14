@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | RoyPainter</title>
+    <meta name="description" content="Contact RoyPainter for free quotes and colour consultations. Call, email or visit our studio in Portland, OR.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body>
+
+    <div id="siteNavbar"></div>
+
+    <main>
+        <!-- Section 1 — Inner hero -->
+        <section class="inner-hero">
+            <div class="inner-hero-glow"></div>
+            <div class="inner-hero-glow-2"></div>
+            <div class="container">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">We Reply Within 2 Hours</span>
+                </div>
+                <h1 class="section-title">Let’s Talk About Your Walls</h1>
+                <p class="inner-hero-sub">Free quotes, colour consultations and honest answers. Reach out any way that suits you.</p>
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span class="sep"><i class="fa-solid fa-chevron-right"></i></span>
+                    <span class="current">Contact</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Section 2 — Contact info cards -->
+        <section class="section section-tight" style="padding-top:5rem;padding-bottom:0;">
+            <div class="container">
+                <div class="grid grid-4">
+                    <div class="contact-info-card">
+                        <div class="icon-tile"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                            <p>Mon–Sat · 8 AM – 6 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="icon-tile"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <a href="mailto:hello@roypainter.com">hello@roypainter.com</a>
+                            <p>Quotes within 2 working hours</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="icon-tile"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4>Visit the Studio</h4>
+                            <p>450 Artisan Way, Suite 100</p>
+                            <p>Portland, OR 97201</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="icon-tile"><i class="fa-regular fa-clock"></i></div>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Mon–Sat · 8:00 AM – 6:00 PM</p>
+                            <p>Sunday · By appointment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 — Form + side info -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-2" style="gap:3.5rem;align-items:start;">
+                    <div>
+                        <span class="section-tag">Free Quote Request</span>
+                        <h2 class="section-title" style="font-size:2.2rem;margin-bottom:1.2rem;">Start Your Project</h2>
+                        <p class="section-sub" style="margin:0 0 2rem;">Tell us about your space and our lead master painter will call you back with a ballpark within 2 hours.</p>
+
+                        <form class="light-form" data-validate
+                              data-success-title="Message Sent!"
+                              data-success-msg="Thank you! Your request has been received — our team will contact you within 2 hours.">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="cName">Full Name</label>
+                                    <input type="text" id="cName" name="name" placeholder="Jane Cooper" required>
+                                    <span class="field-error">Please enter your full name.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cEmail">Email Address</label>
+                                    <input type="email" id="cEmail" name="email" placeholder="jane@example.com" required data-type="email">
+                                    <span class="field-error">Please enter a valid email address.</span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="cPhone">Phone Number</label>
+                                    <input type="tel" id="cPhone" name="phone" placeholder="+1 (555) 000-0000" required data-type="tel">
+                                    <span class="field-error">Please enter a valid phone number.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cService">Service Required</label>
+                                    <select id="cService" name="service" required>
+                                        <option value="">Select a Service</option>
+                                        <option value="Interior Painting">Interior Painting</option>
+                                        <option value="Exterior Painting">Exterior Painting</option>
+                                        <option value="Wall Restoration">Wall Restoration</option>
+                                        <option value="Designer Finishes">Designer Finishes & Textures</option>
+                                        <option value="Cabinet & Wood Staining">Cabinet & Wood Staining</option>
+                                        <option value="Color Consultation">Color Consultation</option>
+                                        <option value="Commercial Painting">Commercial Painting</option>
+                                        <option value="Other">Other / Not Sure</option>
+                                    </select>
+                                    <span class="field-error">Please select a service.</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="cMessage">Project Details</label>
+                                <textarea id="cMessage" name="message" placeholder="Rooms, sizes, timeline, preferred shades…"></textarea>
+                            </div>
+                            <button type="submit" class="cta-button" style="width:100%;justify-content:center;">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <div>
+                        <div class="widget widget-callout" style="margin-bottom:2rem;">
+                            <div style="font-size:2rem;margin-bottom:0.8rem;"><i class="fa-solid fa-paintbrush"></i></div>
+                            <h4>Prefer to talk it through?</h4>
+                            <p>Book a 20-minute free video or on-site consultation with our colour stylists — no obligation.</p>
+                            <a href="tel:+15551234567" class="cta-button" style="width:100%;justify-content:center;padding:0.9rem;"><i class="fa-solid fa-phone"></i> Call Now</a>
+                        </div>
+
+                        <div class="widget">
+                            <h3 class="widget-title">Why 8,000+ Clients Choose Us</h3>
+                            <div class="plan-features" style="list-style:none;display:flex;flex-direction:column;gap:0.8rem;margin:0;padding:0;">
+                                <li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.92rem;color:var(--text-muted);"><i class="fa-solid fa-circle-check" style="color:#16A34A;margin-top:0.3rem;"></i> Free quotes and honest ballparks</li>
+                                <li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.92rem;color:var(--text-muted);"><i class="fa-solid fa-circle-check" style="color:#16A34A;margin-top:0.3rem;"></i> Furniture-safe, low-odour projects</li>
+                                <li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.92rem;color:var(--text-muted);"><i class="fa-solid fa-circle-check" style="color:#16A34A;margin-top:0.3rem;"></i> Up to 10-year workmanship warranty</li>
+                                <li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.92rem;color:var(--text-muted);"><i class="fa-solid fa-circle-check" style="color:#16A34A;margin-top:0.3rem;"></i> Certified crews, fully insured</li>
+                            </div>
+                        </div>
+
+                        <div class="widget">
+                            <h3 class="widget-title">Office Hours</h3>
+                            <div class="table-wrap">
+                                <table>
+                                    <tbody>
+                                        <tr><td><b>Monday – Friday</b></td><td>8:00 AM – 6:00 PM</td></tr>
+                                        <tr><td><b>Saturday</b></td><td>9:00 AM – 4:00 PM</td></tr>
+                                        <tr><td><b>Sunday</b></td><td>By appointment</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 — Map -->
+        <section class="section section-tight" style="padding-top:0;">
+            <div class="container">
+                <div class="map-wrap">
+                    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-122.6902%2C45.5050%2C-122.6682%2C45.5190&layer=mapnik&marker=45.5120%2C-122.6792" title="RoyPainter Studio location map" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5 — FAQ teaser -->
+        <section class="section section-soft" style="padding-top:5rem;">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Quick Answers</span>
+                    <h2 class="section-title">Before You Ask</h2>
+                </div>
+                <div class="faq-list" style="max-width:820px;margin:0 auto;">
+                    <div class="faq-item">
+                        <button class="faq-question"><span class="q">How fast can you start?</span><span class="faq-icon"><i class="fa-solid fa-plus"></i></span></button>
+                        <div class="faq-answer"><div class="faq-answer-inner">Most residential projects start within 1–2 weeks of sign-off. Rush slots are available for small rooms and touch-ups.</div></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question"><span class="q">Is the quote really free?</span><span class="faq-icon"><i class="fa-solid fa-plus"></i></span></button>
+                        <div class="faq-answer"><div class="faq-answer-inner">Yes — on-site or virtual quotes are free, with no obligation. You’ll get a written itemised estimate.</div></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question"><span class="q">Do you service areas outside Portland?</span><span class="faq-icon"><i class="fa-solid fa-plus"></i></span></button>
+                        <div class="faq-answer"><div class="faq-answer-inner">We work across the greater Portland metro and travel statewide for larger commercial projects. Call us to confirm your area.</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="siteFooter"></div>
+
+    <script src="../assets/js/form-validation.js"></script>
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/faq.js"></script>
+</body>
+</html>

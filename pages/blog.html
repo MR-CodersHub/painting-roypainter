@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Guides | RoyPainter</title>
+    <meta name="description" content="Colour trends, prep guides, sheen explanations, eco paints and maintenance advice from RoyPainter's master artisans.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body>
+
+    <div id="siteNavbar"></div>
+
+    <main>
+        <!-- Section 1 — Inner hero -->
+        <section class="inner-hero">
+            <div class="inner-hero-glow"></div>
+            <div class="inner-hero-glow-2"></div>
+            <div class="container">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">Artisan Wisdom</span>
+                </div>
+                <h1 class="section-title">The RoyPainter Journal</h1>
+                <p class="inner-hero-sub">Colour psychology, preparation guides, maintenance calendars and honest answers from crews who actually do the work.</p>
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span class="sep"><i class="fa-solid fa-chevron-right"></i></span>
+                    <span class="current">Blog</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Section 2 — Search + filters + grid -->
+        <section class="section section-tight" style="padding-top:5rem;">
+            <div class="container">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" id="blogSearch" placeholder="Search articles, tags, authors…" aria-label="Search blog articles">
+                </div>
+                <div class="filter-bar" id="blogFilters"></div>
+                <p class="result-count" id="blogCount"></p>
+                <div class="grid grid-3" id="blogGrid" style="align-items:stretch;"></div>
+                <div class="empty-state" id="blogEmpty">
+                    <i class="fa-solid fa-magnifying-glass-minus"></i>
+                    <h3>No articles found</h3>
+                    <p>Try a different keyword or category — or ask us directly.</p>
+                    <a href="../pages/contact.html" class="cta-button" style="margin-top:1rem;">Ask a Question</a>
+                </div>
+                <div style="text-align:center;margin-top:2.6rem;">
+                    <button class="cta-button-secondary" id="blogLoadMore" style="display:none;">Load More Articles <i class="fa-solid fa-angles-down"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 — Categories strip -->
+        <section class="section section-tight section-soft" style="padding:3.5rem 0;">
+            <div class="container">
+                <div class="section-header" style="margin-bottom:2rem;">
+                    <span class="section-tag">Browse By Topic</span>
+                    <h2 class="section-title" style="font-size:2rem;">Categories</h2>
+                </div>
+                <div class="grid grid-4">
+                    <a href="../pages/blog-details.html?id=setup-guide" class="service-card" style="text-decoration:none;padding:1.6rem 1.4rem;">
+                        <div class="icon-tile"><i class="fa-solid fa-list-check"></i></div>
+                        <h3 style="font-size:1.05rem;">Guides</h3>
+                        <p style="font-size:0.85rem;">Step-by-step preparation and planning.</p>
+                    </a>
+                    <a href="../pages/blog-details.html?id=color-trends-2026" class="service-card" style="text-decoration:none;padding:1.6rem 1.4rem;">
+                        <div class="icon-tile"><i class="fa-solid fa-palette"></i></div>
+                        <h3 style="font-size:1.05rem;">Trends</h3>
+                        <p style="font-size:0.85rem;">The palettes shaping modern homes.</p>
+                    </a>
+                    <a href="../pages/blog-details.html?id=eco-paints-guide" class="service-card" style="text-decoration:none;padding:1.6rem 1.4rem;">
+                        <div class="icon-tile"><i class="fa-solid fa-leaf"></i></div>
+                        <h3 style="font-size:1.05rem;">Sustainability</h3>
+                        <p style="font-size:0.85rem;">Low-VOC and natural paint options.</p>
+                    </a>
+                    <a href="../pages/blog-details.html?id=weatherproofing-exterior" class="service-card" style="text-decoration:none;padding:1.6rem 1.4rem;">
+                        <div class="icon-tile"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3 style="font-size:1.05rem;">Maintenance</h3>
+                        <p style="font-size:0.85rem;">Protect your home through the seasons.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 — Newsletter -->
+        <section class="section section-tight" style="padding-top:0;">
+            <div class="container">
+                <div class="cta-banner">
+                    <div class="cta-glow"></div>
+                    <h2>Get the monthly décor letter</h2>
+                    <p>Colour trends, seasonal maintenance checklists and subscriber-only paint deals.</p>
+                    <form class="footer-newsletter" data-newsletter novalidate style="max-width:440px;margin:0 auto;background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.3);">
+                        <input type="email" name="email" placeholder="Your email address" required>
+                        <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="siteFooter"></div>
+
+    <script src="../assets/js/form-validation.js"></script>
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing & Plans | RoyPainter</title>
+    <meta name="description" content="Transparent RoyPainter pricing — one-off project plans and monthly maintenance memberships with free trials, guarantees and no hidden fees.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body>
+
+    <div id="siteNavbar"></div>
+
+    <main>
+        <!-- Section 1 — Inner hero -->
+        <section class="inner-hero">
+            <div class="inner-hero-glow"></div>
+            <div class="inner-hero-glow-2"></div>
+            <div class="container">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">No Hidden Fees · Cancel Anytime</span>
+                </div>
+                <h1 class="section-title">Honest Pricing, Master Finishes</h1>
+                <p class="inner-hero-sub">One-off project plans for a single room or a whole estate — plus a Care Plan membership for homeowners who want their walls flawless year-round.</p>
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span class="sep"><i class="fa-solid fa-chevron-right"></i></span>
+                    <span class="current">Pricing</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Section 2 — Billing toggle + plans -->
+        <section class="section section-tight" style="padding-top:4rem;">
+            <div class="container">
+                <div style="display:flex;align-items:center;justify-content:center;gap:1rem;margin-bottom:2.6rem;flex-wrap:wrap;">
+                    <span data-billing-label="onetime" style="font-weight:800;color:var(--text-dark);">One-Time Project</span>
+                    <label class="billing-switch" style="cursor:pointer;display:inline-flex;align-items:center;">
+                        <input type="checkbox" id="billingToggle" style="width:0;height:0;opacity:0;position:absolute;">
+                        <span style="width:56px;height:30px;border-radius:9999px;background:linear-gradient(135deg,var(--active-accent),#db6d4c);display:inline-block;position:relative;transition:var(--transition);">
+                            <span style="position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#fff;transition:var(--transition);box-shadow:0 2px 6px rgba(0,0,0,0.25);"></span>
+                        </span>
+                    </label>
+                    <span data-billing-label="monthly" style="font-weight:500;color:var(--text-muted);">Care Plan (Monthly)</span>
+                </div>
+
+                <div class="grid grid-3" style="align-items:stretch;">
+                    <div class="pricing-card" data-plan="onetime">
+                        <span class="plan-name">Essential</span>
+                        <div class="plan-price">$420<span> / room</span></div>
+                        <div style="color:var(--text-light);font-size:0.85rem;font-weight:600;">Perfect for single rooms</div>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-check"></i> Single room, 2 premium coats</li>
+                            <li><i class="fa-solid fa-check"></i> Cut-in & roller finish</li>
+                            <li><i class="fa-solid fa-check"></i> Basic surface preparation</li>
+                            <li><i class="fa-solid fa-check"></i> Furniture protection</li>
+                            <li class="disabled"><i class="fa-solid fa-xmark"></i> Color consultation</li>
+                            <li class="disabled"><i class="fa-solid fa-xmark"></i> 10-year warranty</li>
+                        </ul>
+                        <a href="../pages/contact.html" class="cta-button" style="justify-content:center;padding:0.9rem 1.5rem;font-size:0.88rem;">Get Started</a>
+                    </div>
+
+                    <div class="pricing-card popular" data-plan="onetime">
+                        <div class="popular-ribbon">Most Popular</div>
+                        <span class="plan-name">Signature Home</span>
+                        <div class="plan-price">$1,890<span> / home</span></div>
+                        <div style="color:var(--text-light);font-size:0.85rem;font-weight:600;">Whole-home transformation</div>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-check"></i> Whole-home interior painting</li>
+                            <li><i class="fa-solid fa-check"></i> Spray + roll velvet finish</li>
+                            <li><i class="fa-solid fa-check"></i> Free color consultation</li>
+                            <li><i class="fa-solid fa-check"></i> Full furniture protection</li>
+                            <li><i class="fa-solid fa-check"></i> 10-year workmanship warranty</li>
+                            <li><i class="fa-solid fa-check"></i> Priority scheduling</li>
+                        </ul>
+                        <a href="../pages/contact.html" class="cta-button" style="justify-content:center;padding:0.9rem 1.5rem;font-size:0.88rem;">Get Started</a>
+                    </div>
+
+                    <div class="pricing-card" data-plan="onetime">
+                        <span class="plan-name">Luxury Estate</span>
+                        <div class="plan-price">$4,500<span> / project</span></div>
+                        <div style="color:var(--text-light);font-size:0.85rem;font-weight:600;">Designer-grade, end-to-end</div>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-check"></i> Full redesign package</li>
+                            <li><i class="fa-solid fa-check"></i> Designer wall features</li>
+                            <li><i class="fa-solid fa-check"></i> Ceiling & trim refinishing</li>
+                            <li><i class="fa-solid fa-check"></i> Dedicated project manager</li>
+                            <li><i class="fa-solid fa-check"></i> 10-year workmanship warranty</li>
+                            <li><i class="fa-solid fa-check"></i> 5-day express schedule</li>
+                        </ul>
+                        <a href="../pages/contact.html" class="cta-button" style="justify-content:center;padding:0.9rem 1.5rem;font-size:0.88rem;">Get Started</a>
+                    </div>
+
+                    <div class="pricing-card" data-plan="monthly" style="display:none;">
+                        <span class="plan-name">Care Lite</span>
+                        <div class="plan-price">$39<span> / month</span></div>
+                        <div style="color:var(--text-light);font-size:0.85rem;font-weight:600;">One room per quarter</div>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-check"></i> 1 room refresh per quarter</li>
+                            <li><i class="fa-solid fa-check"></i> Annual touch-up visit</li>
+                            <li><i class="fa-solid fa-check"></i> 15% off any project</li>
+                            <li><i class="fa-solid fa-check"></i> Seasonal maintenance checks</li>
+                            <li class="disabled"><i class="fa-solid fa-xmark"></i> Priority emergency service</li>
+                        </ul>
+                        <a href="../pages/contact.html" class="cta-button" style="justify-content:center;padding:0.9rem 1.5rem;font-size:0.88rem;">Start 30-Day Free Trial</a>
+                    </div>
+
+                    <div class="pricing-card popular" data-plan="monthly" style="display:none;">
+                        <div class="popular-ribbon">Best Value</div>
+                        <span class="plan-name">Care Plus</span>
+                        <div class="plan-price">$89<span> / month</span></div>
+                        <div style="color:var(--text-light);font-size:0.85rem;font-weight:600;">Whole-home year-round care</div>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-check"></i> 1 room refresh every 2 months</li>
+                            <li><i class="fa-solid fa-check"></i> Priority emergency service</li>
+                            <li><i class="fa-solid fa-check"></i> 20% off any project</li>
+                            <li><i class="fa-solid fa-check"></i> Annual deep maintenance</li>
+                            <li><i class="fa-solid fa-check"></i> No-fee cancellations</li>
+                        </ul>
+                        <a href="../pages/contact.html" class="cta-button" style="justify-content:center;padding:0.9rem 1.5rem;font-size:0.88rem;">Start 30-Day Free Trial</a>
+                    </div>
+
+                    <div class="pricing-card" data-plan="monthly" style="display:none;">
+                        <span class="plan-name">Care Pro</span>
+                        <div class="plan-price">$179<span> / month</span></div>
+                        <div style="color:var(--text-light);font-size:0.85rem;font-weight:600;">For busy households</div>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-check"></i> Unlimited touch-ups</li>
+                            <li><i class="fa-solid fa-check"></i> 2 refresh rooms per month</li>
+                            <li><i class="fa-solid fa-check"></i> 25% off any project</li>
+                            <li><i class="fa-solid fa-check"></i> Dedicated account manager</li>
+                            <li><i class="fa-solid fa-check"></i> Free color studio access</li>
+                        </ul>
+                        <a href="../pages/contact.html" class="cta-button" style="justify-content:center;padding:0.9rem 1.5rem;font-size:0.88rem;">Start 30-Day Free Trial</a>
+                    </div>
+                </div>
+
+                <p style="text-align:center;color:var(--text-light);font-size:0.85rem;margin-top:2rem;">
+                    <i class="fa-solid fa-circle-info" style="color:var(--active-accent);"></i> Care Plans include a <b>30-day free trial</b> — no card required. All prices exclude paint materials unless noted.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 3 — Comparison table -->
+        <section class="section section-soft" style="padding-top:5rem;">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Side By Side</span>
+                    <h2 class="section-title">What’s Included In Every Plan</h2>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Essential</th>
+                                <th>Signature</th>
+                                <th>Luxury</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><b>Premium low-VOC paint</b></td><td><i class="fa-solid fa-check" style="color:#16A34A;"></i></td><td><i class="fa-solid fa-check" style="color:#16A34A;"></i></td><td><i class="fa-solid fa-check" style="color:#16A34A;"></i></td></tr>
+                            <tr><td><b>Surface preparation</b></td><td>Basic</td><td>Full</td><td>Full + level-5</td></tr>
+                            <tr><td><b>Color consultation</b></td><td>—</td><td><i class="fa-solid fa-check" style="color:#16A34A;"></i></td><td><i class="fa-solid fa-check" style="color:#16A34A;"></i></td></tr>
+                            <tr><td><b>Furniture protection</b></td><td><i class="fa-solid fa-check" style="color:#16A34A;"></i></td><td><i class="fa-solid fa-check" style="color:#16A34A;"></i></td><td><i class="fa-solid fa-check" style="color:#16A34A;"></i></td></tr>
+                            <tr><td><b>Workmanship warranty</b></td><td>1 year</td><td>10 years</td><td>10 years</td></tr>
+                            <tr><td><b>White-glove cleanup</b></td><td><i class="fa-solid fa-check" style="color:#16A34A;"></i></td><td><i class="fa-solid fa-check" style="color:#16A34A;"></i></td><td><i class="fa-solid fa-check" style="color:#16A34A;"></i></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 — Guarantee highlights -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Worry-Free</span>
+                    <h2 class="section-title">The RoyPainter Guarantee</h2>
+                </div>
+                <div class="grid grid-3">
+                    <div class="mission-card">
+                        <div class="icon-tile"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3>10-Year Warranty</h3>
+                        <p>Peeling, blistering or premature failure on Signature & Luxury plans is fixed free, no questions.</p>
+                    </div>
+                    <div class="mission-card">
+                        <div class="icon-tile"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                        <h3>Price Lock</h3>
+                        <p>The quote is the price. No surprise add-ons, no “material costs” later — ever.</p>
+                    </div>
+                    <div class="mission-card">
+                        <div class="icon-tile"><i class="fa-solid fa-heart-circle-check"></i></div>
+                        <h3>Finish-or-Free Promise</h3>
+                        <p>If you’re not delighted with the walkthrough, we repaint at no cost until you are.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5 — Pricing FAQ -->
+        <section class="section section-soft">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Pricing Questions</span>
+                    <h2 class="section-title">FAQ</h2>
+                </div>
+                <div class="faq-list" style="max-width:820px;margin:0 auto;">
+                    <div class="faq-item">
+                        <button class="faq-question"><span class="q">Do plans include paint and materials?</span><span class="faq-icon"><i class="fa-solid fa-plus"></i></span></button>
+                        <div class="faq-answer"><div class="faq-answer-inner">Labour and standard premium paint are included. Luxury designer finishes (Venetian plaster, specialty brands) are quoted separately with your written estimate.</div></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question"><span class="q">How does the 30-day free trial work?</span><span class="faq-icon"><i class="fa-solid fa-plus"></i></span></button>
+                        <div class="faq-answer"><div class="faq-answer-inner">Start any Care Plan free for 30 days — no card required. You’ll receive a trial touch-up visit; cancel anytime before day 30 with zero charge.</div></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question"><span class="q">Can I pay in installments?</span><span class="faq-icon"><i class="fa-solid fa-plus"></i></span></button>
+                        <div class="faq-answer"><div class="faq-answer-inner">Yes — project plans above $1,000 can be split into three equal payments: on sign-off, at the midpoint, and at handover.</div></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question"><span class="q">What if I need a custom scope?</span><span class="faq-icon"><i class="fa-solid fa-plus"></i></span></button>
+                        <div class="faq-answer"><div class="faq-answer-inner">Every plan is a starting point. Request a custom quote through our contact form and receive an itemised proposal within 2 working hours.</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6 — CTA -->
+        <section class="section section-tight" style="padding-top:0;">
+            <div class="container">
+                <div class="cta-banner">
+                    <div class="cta-glow"></div>
+                    <h2>Get your free instant estimate</h2>
+                    <p>Answer four quick questions and receive a ballpark in under 60 seconds.</p>
+                    <div class="hero-actions">
+                        <a href="../pages/contact.html" class="cta-button"><i class="fa-solid fa-calculator"></i> Get My Estimate</a>
+                        <a href="../pages/services.html" class="cta-button-secondary" style="background:rgba(255,255,255,0.12);color:#fff;border-color:rgba(255,255,255,0.25);">Explore Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="siteFooter"></div>
+
+    <script src="../assets/js/form-validation.js"></script>
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/faq.js"></script>
+    <script src="../assets/js/pricing.js"></script>
+</body>
+</html>

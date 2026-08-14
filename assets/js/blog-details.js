@@ -175,10 +175,10 @@
         '    </div>' +
         '    <div class="widget widget-callout">' +
         '      <div style="font-size:2.2rem;margin-bottom:0.8rem;color:var(--active-accent);"><i class="fa-solid fa-envelope-open-text"></i></div>' +
-        '      <h4>Join 8,200+ Homeowners</h4>' +
-        '      <p>Get curated color trends, seasonal maintenance guides and exclusive paint offers monthly.</p>' +
-        '      <form class="footer-newsletter" data-newsletter novalidate style="margin-top:1rem;">' +
-        '        <input type="email" name="email" placeholder="Your email address" required>' +
+        '      <h4 style="color:#ffffff !important;">Join 8,200+ Homeowners</h4>' +
+        '      <p style="color:rgba(255,255,255,0.85) !important;">Get curated color trends, seasonal maintenance guides and exclusive paint offers monthly.</p>' +
+        '      <form class="footer-newsletter" data-newsletter novalidate style="margin-top:1rem;background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.25);">' +
+        '        <input type="email" name="email" placeholder="Your email address" required style="color:#ffffff;">' +
         '        <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>' +
         '      </form>' +
         '    </div>' +

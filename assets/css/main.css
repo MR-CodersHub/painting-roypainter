@@ -585,11 +585,17 @@ nav {
 .grid {
     display: grid;
     gap: 2rem;
+    width: 100%;
 }
 
-.grid-2 { grid-template-columns: repeat(2, 1fr); }
-.grid-3 { grid-template-columns: repeat(3, 1fr); }
-.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.grid > * {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 
 /* Section spacing */
 .section { padding: 6rem 1.5rem; }
@@ -1547,7 +1553,7 @@ nav {
 .form-group label {
     font-size: 0.85rem;
     font-weight: 600;
-    margin: 1rem 0;
+    margin-bottom: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: rgba(255, 255, 255, 0.9);
@@ -1942,7 +1948,7 @@ html[dir="rtl"] .footer-section a:hover {
     .grid-4 { grid-template-columns: 1fr; }
 
     .inner-hero {
-        padding: 9rem 1.25rem 4rem;
+        padding: 7.2rem 1.25rem 3.5rem;
     }
 
     .inner-hero .section-title {
@@ -1984,11 +1990,57 @@ html[dir="rtl"] .footer-section a:hover {
 }
 
 @media (max-width: 480px) {
-    .grid-4 { grid-template-columns: 1fr; }
+    .container {
+        padding: 0 1rem;
+    }
+
+    .nav-container {
+        top: 0.6rem;
+        padding: 0 0.65rem;
+    }
+
+    nav {
+        padding: 0.55rem 1rem;
+    }
+
+    .hero {
+        padding: 6.8rem 1rem 3.5rem;
+    }
 
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.85rem;
+        line-height: 1.2;
     }
+
+    .hero-description {
+        font-size: 0.92rem;
+        line-height: 1.6;
+        margin-bottom: 1.4rem;
+    }
+
+    .hero-badge {
+        padding: 0.35rem 0.85rem;
+        margin-bottom: 1rem;
+    }
+
+    .badge-text {
+        font-size: 0.72rem;
+        letter-spacing: 0.3px;
+    }
+
+    .hero-proof {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.6rem;
+        padding-top: 1rem;
+    }
+
+    .proof-details {
+        text-align: center;
+    }
+
+    .grid-4 { grid-template-columns: 1fr; }
 
     .section-title {
         font-size: 1.7rem;
@@ -1996,10 +2048,6 @@ html[dir="rtl"] .footer-section a:hover {
 
     .inner-hero .section-title {
         font-size: 1.9rem;
-    }
-
-    .hero {
-        padding: 6.5rem 1rem 3.5rem;
     }
 
     .swatches-list {
@@ -2022,6 +2070,38 @@ html[dir="rtl"] .footer-section a:hover {
     .hero-actions .cta-button-secondary {
         padding: 0.9rem 1.4rem;
         font-size: 0.88rem;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .form-container {
+        padding: 1.4rem 1rem;
+        border-radius: var(--radius-md);
+    }
+
+    .form-group label {
+        font-size: 0.8rem;
+        margin-bottom: 0.35rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 0.85rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .form-submit {
+        padding: 1rem 1.2rem;
+        font-size: 0.92rem;
+    }
+
+    .contact {
+        padding: 4.5rem 1rem;
+    }
+
+    .contact-title {
+        font-size: 1.75rem;
     }
 
     .services-image,

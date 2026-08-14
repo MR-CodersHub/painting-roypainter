@@ -109,14 +109,14 @@
         .logo-icon {
             width: 38px;
             height: 38px;
-            background: linear-gradient(135deg, var(--active-accent), #E07A5F);
+            background: linear-gradient(135deg, var(--primary-red), #E07A5F);
             border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--white);
             font-size: 1.1rem;
-            box-shadow: 0 4px 14px rgba(var(--active-accent-rgb), 0.35);
+            box-shadow: 0 4px 14px rgba(var(--primary-red-rgb), 0.35);
             transition: var(--transition);
         }
 
@@ -129,8 +129,7 @@
         }
 
         .logo-accent {
-            color: var(--active-accent);
-            transition: color 0.35s ease;
+            color: var(--primary-red);
         }
 
         .nav-links {
@@ -995,6 +994,103 @@
         }
 
         /* =====================================================
+           MINIMAL BRANDS SECTION
+        ===================================================== */
+        .brands-collabs {
+            padding: 3rem 2rem;
+            background: #FFFFFF;
+            border-top: 1px solid var(--light-gray);
+            border-bottom: 1px solid var(--light-gray);
+            position: relative;
+            z-index: 2;
+        }
+
+        .brands-wrapper {
+            max-width: 1320px;
+            margin: 0 auto;
+        }
+
+        .brands-grid {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .brand-item {
+            color: #64748B;
+            font-size: 1.18rem;
+            transition: all 0.25s ease;
+            user-select: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            letter-spacing: 0.5px;
+        }
+
+        .brand-item:hover {
+            color: var(--text-dark);
+            transform: scale(1.06);
+        }
+
+        .brand-item.brand-1 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-style: italic;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }
+
+        .brand-item.brand-2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            letter-spacing: 3.5px;
+            text-transform: uppercase;
+        }
+
+        .brand-item.brand-3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1.3rem;
+            letter-spacing: 0.2px;
+        }
+
+        .brand-item.brand-4 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .brand-item.brand-5 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 700;
+            text-transform: lowercase;
+            letter-spacing: -0.2px;
+            font-size: 1.05rem;
+        }
+
+        .brand-item.brand-6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 768px) {
+            .brands-collabs {
+                padding: 2.2rem 1.5rem;
+            }
+
+            .brands-grid {
+                justify-content: center;
+                gap: 2rem;
+            }
+        }
+
+        /* =====================================================
            SERVICES SECTION
         ===================================================== */
         .services {
@@ -1125,7 +1221,7 @@
         ===================================================== */
         .about {
             padding: 6rem 2rem;
-            background: var(--white);
+            background: var(--cream);
         }
 
         .about-wrapper {
@@ -1357,7 +1453,7 @@
         }
 
         .footer-section h3 span {
-            color: var(--active-accent);
+            color: var(--primary-red);
         }
 
         .footer-section p,
@@ -1639,6 +1735,53 @@
         </div>
     </section>
 
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-wrapper">
+            <div class="about-container">
+                <div class="about-content">
+                    <span class="section-tag">Dedicated To Excellence</span>
+                    <h2>A Decade of Precision Wall Artistry</h2>
+                    <p>RoyPainter has been transforming residential and luxury commercial spaces for over a decade. We treat every wall as a canvas, combining traditional European brush techniques with cutting-edge spray technology.</p>
+                    <p>From initial color psychology consulting to our white-glove clean up, every phase is handled with utmost professionalism and respect for your home.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">1,200+</div>
+                            <div class="stat-label">Homes Transformed</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">99.4%</div>
+                            <div class="stat-label">Client Approval</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">10 Yr</div>
+                            <div class="stat-label">Warranty Backed</div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="cta-button">Get Free Color Consultation</a>
+                </div>
+                <div class="about-image">
+                    <img src="./assets/images/home-bg.jpg" alt="Professional Painter at Work">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands-collabs">
+        <div class="brands-wrapper">
+            <div class="brands-grid">
+                <span class="brand-item brand-1">BENJAMIN MOORE</span>
+                <span class="brand-item brand-2">SHERWIN-WILLIAMS</span>
+                <span class="brand-item brand-3">Farrow &amp; Ball</span>
+                <span class="brand-item brand-4">DULUX</span>
+                <span class="brand-item brand-5">behr paint</span>
+                <span class="brand-item brand-6">PPG</span>
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section class="services" id="services">
         <div class="services-wrapper">
@@ -1693,39 +1836,7 @@
                 </div>
                 <div class="services-image">
                     <div class="watercolor-accent" id="serviceAccent"></div>
-                    <img src="https://images.unsplash.com/photo-1589939705066-5470dc7b4bbe?w=700&h=600&fit=crop" alt="Paint Color Swatches Palette">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="about-wrapper">
-            <div class="about-container">
-                <div class="about-content">
-                    <span class="section-tag">Dedicated To Excellence</span>
-                    <h2>A Decade of Precision Wall Artistry</h2>
-                    <p>RoyPainter has been transforming residential and luxury commercial spaces for over a decade. We treat every wall as a canvas, combining traditional European brush techniques with cutting-edge spray technology.</p>
-                    <p>From initial color psychology consulting to our white-glove clean up, every phase is handled with utmost professionalism and respect for your home.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <div class="stat-number">1,200+</div>
-                            <div class="stat-label">Homes Transformed</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">99.4%</div>
-                            <div class="stat-label">Client Approval</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">10 Yr</div>
-                            <div class="stat-label">Warranty Backed</div>
-                        </div>
-                    </div>
-                    <a href="#contact" class="cta-button">Get Free Color Consultation</a>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1552882914-99c38abcb0d0?w=700&h=600&fit=crop" alt="Professional Painter at Work">
+                    <img src="./assets/images/palette.jpg" alt="Paint Color Swatches Palette">
                 </div>
             </div>
         </div>
@@ -1784,7 +1895,7 @@
         <div class="footer-wrapper">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Roy<span>Painter</span></h3>
+                    <h3>Roy<span class="logo-accent">Painter</span></h3>
                     <p>Master-grade residential & commercial painting, wall restoration, and bespoke architectural finishes.</p>
                 </div>
                 <div class="footer-section">
@@ -1951,7 +2062,7 @@
             });
         }, { threshold: 0.1 });
 
-        document.querySelectorAll('.feature-card, .service-item, .stat').forEach(el => {
+        document.querySelectorAll('.feature-card, .service-item, .stat, .brand-item').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(22px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';

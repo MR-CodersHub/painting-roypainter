@@ -1789,6 +1789,19 @@ html[dir="rtl"] .footer-section a:hover {
    8. RESPONSIVE
 ===================================================== */
 @media (max-width: 1024px) {
+    .nav-links {
+        gap: 1.3rem;
+    }
+
+    .nav-links a {
+        font-size: 0.88rem;
+    }
+
+    .nav-phone,
+    .cta-nav {
+        display: none;
+    }
+
     .hero-wrapper {
         grid-template-columns: 1fr;
         gap: 3.5rem;
@@ -1830,6 +1843,24 @@ html[dir="rtl"] .footer-section a:hover {
 
     .inner-hero .section-title {
         font-size: 2.8rem;
+    }
+
+    .section-title {
+        font-size: 2.3rem;
+    }
+
+    .about-content h2,
+    .contact-title {
+        font-size: 2.3rem;
+    }
+
+    .services-image,
+    .about-image {
+        height: 380px;
+    }
+
+    .room-preview-box {
+        height: 300px;
     }
 }
 
@@ -1874,6 +1905,16 @@ html[dir="rtl"] .footer-section a:hover {
         left: 0;
     }
 
+    .float-card {
+        padding: 0.6rem 0.9rem;
+    }
+
+    .float-icon-box {
+        width: 34px;
+        height: 34px;
+        font-size: 1rem;
+    }
+
     .services-list {
         grid-template-columns: 1fr;
     }
@@ -1883,8 +1924,16 @@ html[dir="rtl"] .footer-section a:hover {
         gap: 0;
     }
 
+    .form-container {
+        padding: 1.6rem;
+    }
+
     .about-stats {
         flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .grid {
         gap: 1.5rem;
     }
 
@@ -1900,15 +1949,85 @@ html[dir="rtl"] .footer-section a:hover {
         font-size: 2.2rem;
     }
 
+    .section-title {
+        font-size: 1.9rem;
+    }
+
     .section { padding: 4.5rem 1rem; }
+    .section-tight { padding: 3.5rem 1rem; }
     .features, .services, .about, .contact { padding-left: 1.25rem; padding-right: 1.25rem; }
 
     .brands-collabs { padding: 2.2rem 1.5rem; }
     .brands-grid { justify-content: center; gap: 2rem; }
+
+    .about-content h2,
+    .contact-title {
+        font-size: 1.9rem;
+    }
+
+    .services-image,
+    .about-image {
+        height: 320px !important;
+    }
+
+    .room-preview-box {
+        height: 280px;
+    }
+
+    .breadcrumb {
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom-links {
+        gap: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
     .grid-4 { grid-template-columns: 1fr; }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.7rem;
+    }
+
+    .inner-hero .section-title {
+        font-size: 1.9rem;
+    }
+
+    .hero {
+        padding: 6.5rem 1rem 3.5rem;
+    }
+
+    .swatches-list {
+        gap: 0.6rem;
+    }
+
+    .color-swatch-btn {
+        width: 34px;
+        height: 34px;
+    }
+
+    .avatar-img,
+    .avatar-badge {
+        width: 34px;
+        height: 34px;
+        font-size: 0.7rem;
+    }
+
+    .hero-actions .cta-button,
+    .hero-actions .cta-button-secondary {
+        padding: 0.9rem 1.4rem;
+        font-size: 0.88rem;
+    }
+
+    .services-image,
+    .about-image {
+        height: 260px !important;
+    }
 }
 
 /* =====================================================

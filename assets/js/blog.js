@@ -1,11 +1,12 @@
 /* ==========================================================================
-   RoyPainter — Blog listing (blog.html)
-   Client-side search + category filter + incremental pagination.
+   RoyPainter — Enhanced Blog Listing (blog.js)
+   Features spotlight article, client-side search, topic filter, and pagination.
    ========================================================================== */
 (function () {
     'use strict';
 
     var grid = document.getElementById('blogGrid');
+    var spotlightContainer = document.getElementById('blogSpotlight');
     var searchInput = document.getElementById('blogSearch');
     var filterBar = document.getElementById('blogFilters');
     var countEl = document.getElementById('blogCount');
@@ -31,6 +32,35 @@
         if (!state.query) return true;
         var q = state.query.toLowerCase();
         return (post.title + ' ' + post.excerpt + ' ' + post.tags.join(' ') + ' ' + post.category + ' ' + post.author.name).toLowerCase().indexOf(q) !== -1;
+    }
+
+    // Render Featured Spotlight Article (first trending article)
+    function renderSpotlight() {
+        if (!spotlightContainer || !POSTS.length) return;
+        var featured = POSTS[0];
+        spotlightContainer.innerHTML =
+            '<a class="blog-featured-banner" href="' + DETAIL_URL + featured.id + '">' +
+            '  <div class="blog-featured-img">' +
+            '    <span class="chip chip-accent" style="position:absolute;top:1.2rem;left:1.2rem;z-index:2;"><i class="fa-solid fa-fire"></i> Featured Guide</span>' +
+            '    <img src="' + featured.image + '" alt="' + featured.title + '">' +
+            '  </div>' +
+            '  <div class="blog-featured-body">' +
+            '    <div class="blog-meta">' +
+            '      <span><i class="fa-solid fa-tag"></i> ' + featured.category + '</span>' +
+            '      <span><i class="fa-regular fa-calendar"></i> ' + fmtDate(featured.date) + '</span>' +
+            '      <span><i class="fa-regular fa-clock"></i> ' + featured.readTime + '</span>' +
+            '    </div>' +
+            '    <h2 style="font-family:\'Playfair Display\',serif;font-size:2rem;font-weight:800;color:var(--text-dark);line-height:1.25;">' + featured.title + '</h2>' +
+            '    <p style="font-size:1rem;color:var(--text-muted);line-height:1.7;">' + featured.excerpt + '</p>' +
+            '    <div class="blog-author" style="margin-top:0.4rem;">' +
+            '      <img src="' + featured.author.avatar + '" alt="' + featured.author.name + '">' +
+            '      <div><div class="name">' + featured.author.name + '</div><div class="role">' + featured.author.role + '</div></div>' +
+            '    </div>' +
+            '    <div style="display:inline-flex;align-items:center;gap:0.5rem;color:var(--active-accent);font-weight:700;margin-top:0.5rem;">' +
+            '      Read Full Article <i class="fa-solid fa-arrow-right"></i>' +
+            '    </div>' +
+            '  </div>' +
+            '</a>';
     }
 
     function cardHTML(post) {
@@ -116,6 +146,7 @@
         });
     }
 
+    renderSpotlight();
     renderFilters();
     render();
 })();

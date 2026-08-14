@@ -33,12 +33,34 @@
     }
 
     function cardHTML(s) {
+        var startPrice = (s.pricing && s.pricing[0] && s.pricing[0].price) ? s.pricing[0].price : 'Custom';
+        var warranty = (s.meta && s.meta.warranty) ? s.meta.warranty : '10 Years';
+        var rating = (s.meta && s.meta.rating) ? s.meta.rating : '4.9/5';
+
         return '' +
             '<article class="service-card" data-category="' + categoryOf(s) + '" data-id="' + s.id + '">' +
-            '  <div class="icon-tile"><i class="' + s.icon + '"></i></div>' +
-            '  <h3>' + s.title + '</h3>' +
-            '  <p>' + s.short + '</p>' +
-            '  <a class="card-link" href="' + DETAIL_URL + s.id + '">Explore Service <i class="fa-solid fa-arrow-right"></i></a>' +
+            '  <div class="service-card-image-wrap">' +
+            '    <img src="' + s.image + '" alt="' + s.title + '" class="service-card-img" loading="lazy">' +
+            '    <div class="service-card-overlay"></div>' +
+            '    <span class="service-num-badge">#' + s.num + '</span>' +
+            '    <span class="chip chip-accent service-cat-chip">' + categoryOf(s) + '</span>' +
+            '    <div class="service-floating-icon"><i class="' + s.icon + '"></i></div>' +
+            '  </div>' +
+            '  <div class="service-card-content">' +
+            '    <div class="service-card-meta">' +
+            '      <span><i class="fa-solid fa-star" style="color:#F59E0B;"></i> ' + rating + '</span>' +
+            '      <span><i class="fa-solid fa-shield-halved" style="color:var(--active-accent);"></i> ' + warranty + '</span>' +
+            '    </div>' +
+            '    <h3 class="service-card-title">' + s.title + '</h3>' +
+            '    <p class="service-card-desc">' + s.short + '</p>' +
+            '    <div class="service-card-footer">' +
+            '      <div class="service-price-tag">' +
+            '        <span class="price-from">Starting</span>' +
+            '        <span class="price-val">' + startPrice + '</span>' +
+            '      </div>' +
+            '      <a class="service-action-btn" href="' + DETAIL_URL + s.id + '">Explore Service <i class="fa-solid fa-arrow-right"></i></a>' +
+            '    </div>' +
+            '  </div>' +
             '</article>';
     }
 

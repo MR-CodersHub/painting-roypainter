@@ -119,14 +119,14 @@
         '  <nav>' +
         '    <div class="nav-wrapper">' +
         '      <a href="' + p('index.html') + '" class="logo-wrap">' +
-        '        <div class="logo-icon"><i class="fa-solid fa-paintbrush"></i></div>' +
+        '        <img src="' + p('assets/images/logo.png') + '" alt="RoyPainter Logo" class="brand-logo-img">' +
         '        <div class="logo">Roy<span class="logo-accent">Painter</span></div>' +
         '      </a>' +
         '      <ul class="nav-links">' +
         '        <li><a href="' + p('index.html') + '" data-nav="home">Home</a></li>' +
         '        <li><a href="' + p('pages/home-2.html') + '" data-nav="home-2">Home 2</a></li>' +
-        '        <li><a href="' + p('pages/services.html') + '" data-nav="services">Services</a></li>' +
         '        <li><a href="' + p('pages/about.html') + '" data-nav="about">About</a></li>' +
+        '        <li><a href="' + p('pages/services.html') + '" data-nav="services">Services</a></li>' +
         '        <li><a href="' + p('pages/blog.html') + '" data-nav="blog">Blog</a></li>' +
         '        <li><a href="' + p('pages/contact.html') + '" data-nav="contact">Contact</a></li>' +
         '      </ul>' +
@@ -148,13 +148,11 @@
         '</div>' +
         '<div class="mobile-menu" id="mobileMenu">' +
         '  <a href="' + p('index.html') + '" class="mobile-link">Home</a>' +
-        '  <a href="' + p('pages/home-2.html') + '" class="mobile-link">Home II — Residential</a>' +
-        '  <a href="' + p('pages/services.html') + '" class="mobile-link">Our Services</a>' +
+        '  <a href="' + p('pages/home-2.html') + '" class="mobile-link">Home 2</a>' +
         '  <a href="' + p('pages/about.html') + '" class="mobile-link">About Us</a>' +
-        '  <a href="' + p('pages/pricing.html') + '" class="mobile-link">Pricing</a>' +
+        '  <a href="' + p('pages/services.html') + '" class="mobile-link">Our Services</a>' +
         '  <a href="' + p('pages/blog.html') + '" class="mobile-link">Blog & Guides</a>' +
-        '  <a href="' + p('pages/faq.html') + '" class="mobile-link">FAQ</a>' +
-        '  <a href="' + p('pages/contact.html') + '" class="mobile-link">Contact & Free Quote</a>' +
+        '  <a href="' + p('pages/contact.html') + '" class="mobile-link">Contact</a>' +
         '  <div class="mobile-toggles">' +
         '    <button class="icon-btn" data-theme-toggle style="flex:1;" aria-label="Toggle dark or light mode"><i class="fa-solid fa-moon"></i><span style="margin-left:0.5rem;font-size:0.85rem;">Theme</span></button>' +
         '    <button class="icon-btn" data-dir-toggle style="flex:1;" aria-label="Toggle right-to-left layout">RTL</button>' +
@@ -169,12 +167,12 @@
         '  <div class="footer-wrapper">' +
         '    <div class="footer-content">' +
         '      <div class="footer-section">' +
-        '        <h3>Roy<span class="logo-accent">Painter</span></h3>' +
+        '        <a href="' + p('index.html') + '" class="logo-wrap" style="margin-bottom:1.2rem;display:inline-flex;">' +
+        '          <img src="' + p('assets/images/logo.png') + '" alt="RoyPainter Logo" class="brand-logo-img">' +
+        '          <div class="logo" style="color:#FFFFFF;">Roy<span class="logo-accent">Painter</span></div>' +
+        '        </a>' +
         '        <p>Master-grade residential & commercial painting, wall restoration, and bespoke architectural finishes.</p>' +
-        '        <form class="footer-newsletter" data-newsletter novalidate>' +
-        '          <input type="email" name="email" placeholder="Your email for décor tips" required>' +
-        '          <button type="submit" aria-label="Subscribe to newsletter"><i class="fa-solid fa-paper-plane"></i></button>' +
-        '        </form>' +
+        
         '        <div class="footer-social">' +
         '          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>' +
         '          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>' +
@@ -202,7 +200,7 @@
         '        <h3>Contact Us</h3>' +
         '        <p><i class="fa-solid fa-phone" style="margin-right:0.5rem;color:var(--active-accent);"></i> +1 (555) 123-4567</p>' +
         '        <p><i class="fa-solid fa-envelope" style="margin-right:0.5rem;color:var(--active-accent);"></i> hello@roypainter.com</p>' +
-        '        <p><i class="fa-solid fa-location-dot" style="margin-right:0.5rem;color:var(--active-accent);"></i> 450 Artisan Way, Suite 100, Portland, OR</p>' +
+        '        <p><i class="fa-solid fa-location-dot" style="margin-right:0.5rem;color:var(--active-accent);"></i> 450 Artisan Way, Suite 100, Portland</p>' +
         '        <p><i class="fa-regular fa-clock" style="margin-right:0.5rem;color:var(--active-accent);"></i> Mon–Sat · 8:00 AM – 6:00 PM</p>' +
         '      </div>' +
         '    </div>' +
@@ -225,7 +223,7 @@
         '  <div class="auth-modal">' +
         '    <button class="modal-close" data-auth-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button>' +
         '    <div class="auth-logo">' +
-        '      <div class="logo-icon" style="width:42px;height:42px;"><i class="fa-solid fa-paintbrush"></i></div>' +
+        '      <img src="' + p('assets/images/logo.png') + '" alt="RoyPainter Logo" class="brand-logo-img" style="width:42px;height:42px;">' +
         '      <div class="logo">Roy<span class="logo-accent">Painter</span></div>' +
         '    </div>' +
         '    <div class="auth-tabs">' +

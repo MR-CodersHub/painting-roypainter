@@ -182,6 +182,19 @@ nav {
     text-decoration: none;
 }
 
+.brand-logo-img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    display: inline-block;
+    transition: var(--transition);
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.12));
+}
+
+.logo-wrap:hover .brand-logo-img {
+    transform: scale(1.1) rotate(4deg);
+}
+
 .logo-icon {
     width: 38px;
     height: 38px;
@@ -1445,7 +1458,7 @@ nav {
 }
 
 .stat-number {
-    font-size: 2.8rem;
+    font-size: 1.5rem;
     font-weight: 800;
     color: var(--active-accent);
     line-height: 1;
@@ -1534,7 +1547,7 @@ nav {
 .form-group label {
     font-size: 0.85rem;
     font-weight: 600;
-    margin-bottom: 0.6rem;
+    margin: 1rem 0;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: rgba(255, 255, 255, 0.9);
@@ -1607,10 +1620,12 @@ nav {
    7. FOOTER
 ===================================================== */
 footer {
-    background: var(--footer-bg);
-    color: var(--white);
+    background: var(--footer-bg, #0F172A);
+    color: #E2E8F0;
     padding: 4.5rem 2rem 2rem;
     text-align: center;
+    position: relative;
+    z-index: 10;
 }
 
 .footer-wrapper {
@@ -1626,29 +1641,56 @@ footer {
     text-align: left;
 }
 
-.footer-section h3 {
+.footer-section h3,
+.footer-section .footer-title {
     font-family: 'Playfair Display', serif;
     font-size: 1.4rem;
+    font-weight: 700;
     margin-bottom: 1.2rem;
-    color: var(--white);
+    color: #FFFFFF !important;
+    letter-spacing: -0.2px;
 }
 
-.footer-section h3 span {
-    color: var(--primary-red);
+.footer-section .logo-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    text-decoration: none;
+    margin-bottom: 1.2rem;
+}
+
+.footer-section .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: #FFFFFF !important;
+    letter-spacing: -0.5px;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.footer-section h3 span,
+.footer-section .logo-accent {
+    color: var(--primary-red) !important;
 }
 
 .footer-section p,
 .footer-section a {
     font-size: 0.92rem;
-    color: #9BA3AF;
+    color: #94A3B8;
     margin-bottom: 0.7rem;
     text-decoration: none;
     display: block;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.25s ease;
 }
 
 .footer-section a:hover {
-    color: var(--active-accent);
+    color: #FFFFFF;
+    transform: translateX(3px);
+}
+
+html[dir="rtl"] .footer-section a:hover {
+    transform: translateX(-3px);
 }
 
 .footer-newsletter {
